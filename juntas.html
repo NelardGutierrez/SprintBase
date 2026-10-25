@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maqueta estática de juntas y reuniones SCRUM.">
+  <title>Juntas / Reuniones | SprintBase</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/ui.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span><span class="brand-name">SprintBase</span><small>Proyecto TI-162</small></span></a>
+      <p class="side-label">Espacio de trabajo</p>
+      <nav class="nav" aria-label="Módulos">
+        <a href="index.html"><span class="nav-icon">◫</span> Resumen</a>
+        <a href="proyectos.html"><span class="nav-icon">▣</span> Proyectos</a>
+        <a href="backlog.html"><span class="nav-icon">☷</span> Product Backlog</a>
+        <a href="sprints.html"><span class="nav-icon">◷</span> Sprints</a>
+        <a href="tareas.html"><span class="nav-icon">☑</span> Sprint Backlog / Tareas</a>
+        <a href="kanban.html"><span class="nav-icon">▦</span> Tablero Kanban</a>
+        <a href="seguimiento.html"><span class="nav-icon">↗</span> Seguimiento</a>
+        <a href="impedimentos.html"><span class="nav-icon">⚑</span> Impedimentos</a>
+        <a href="juntas.html" class="active" aria-current="page"><span class="nav-icon">◉</span> Juntas / Reuniones</a>
+        <a href="retrospectiva.html"><span class="nav-icon">✦</span> Retrospectiva</a>
+      </nav>
+      <p class="side-label">Administración</p>
+      <nav class="nav" aria-label="Administración">
+        <a href="administracion.html"><span class="nav-icon">♙</span> Equipo y roles</a>
+        <a href="login.html"><span class="nav-icon">⇥</span> Inicio de sesión</a>
+      </nav>
+      <p class="sidebar-bottom"><span class="mini-dot"></span>Versión 0.3 · Prototipo estático (solo frontend, sin persistencia). Sin servidor ni base de datos.</p>
+    </aside>
+    <main class="main" id="contenido">
+      <div class="topbar">
+        <p class="breadcrumb">Espacio de trabajo / <strong>Juntas / Reuniones</strong></p>
+        <div class="top-actions">
+          <span class="pill pill-preview">● Vista de muestra</span>
+          <label class="role-switch"><span>Ver como:</span><select id="role-view" aria-label="Ver como">
+            <option value="neutral">Vista neutral</option><option value="PO">Product Owner (PO)</option><option value="SM">Scrum Master (SM)</option>
+            <option value="EQ">Miembro del Equipo / Desarrollador (EQ)</option><option value="SK">Stakeholder / Interesado (SK)</option>
+          </select></label>
+          <span class="avatar">SM</span>
+        </div>
+      </div>
+      <div class="heading-row">
+        <div><p class="eyebrow">SCRUM · Reuniones del equipo</p><h1>Juntas / Reuniones</h1><p class="lead">Agenda ilustrativa de Daily Scrum, Sprint Planning, Review y Retrospective.</p></div>
+        <button type="button" class="fake-button inactive" data-role-only="SM" data-toast="Acción simulada">+ Programar reunión</button>
+      </div>
+      <div class="info-box"><strong>Maqueta no funcional.</strong> Los horarios y estados son datos de ejemplo; no se crea ni se almacena ninguna reunión.</div>
+      <section class="section">
+        <div class="section-head"><div><h2>Daily Scrum</h2><p class="section-sub">Sprint 02 · reuniones programadas</p></div></div>
+        <div class="grid cols-2">
+          <article class="card panel">
+            <div class="section-head"><div><h3>Daily Scrum · Equipo de producto</h3><p class="section-sub">Hoy · 09:00</p></div><span class="chip green">Programada</span></div>
+            <p class="smallnote meeting-live-status">En el sistema final se iniciará automáticamente a la hora programada. Esta maqueta no ejecuta temporizadores.</p>
+            <h4 class="meeting-members-title">Asistencia de ejemplo</h4>
+            <div class="item-row"><span class="tiny-avatar">AR</span><div class="item-main"><h4>Ana Ruiz · Scrum Master</h4></div><span class="chip green">Conectado</span></div>
+            <div class="item-row"><span class="tiny-avatar">LV</span><div class="item-main"><h4>Luis Vega · Product Owner</h4></div><span class="chip amber">Tarde</span></div>
+            <div class="item-row"><span class="tiny-avatar">MS</span><div class="item-main"><h4>Marta Solís · Equipo</h4></div><span class="chip pink">Ausente</span></div>
+            <div class="story-actions">
+              <button type="button" class="fake-button inactive" data-role-only="PO,SM,EQ" data-toast="Acción simulada">Conectarme</button>
+              <button type="button" class="fake-button secondary inactive" data-role-only="SM" data-toast="Acción simulada">Cerrar reunión</button>
+            </div>
+          </article>
+          <article class="card panel">
+            <div class="section-head"><div><h3>Daily Scrum · Refinamiento</h3><p class="section-sub">Mañana · 09:15</p></div><span class="chip blue">En curso</span></div>
+            <p class="smallnote">Estado ilustrativo, sin conexión ni sesión de videollamada.</p>
+            <div class="item-row"><span class="tiny-avatar">AR</span><div class="item-main"><h4>Ana Ruiz · Scrum Master</h4></div><span class="chip green">Conectado</span></div>
+            <div class="item-row"><span class="tiny-avatar">LV</span><div class="item-main"><h4>Luis Vega · Product Owner</h4></div><span class="chip green">Conectado</span></div>
+            <div class="story-actions">
+              <button type="button" class="fake-button inactive" data-role-only="PO,SM,EQ" data-toast="Acción simulada">Conectarme</button>
+              <button type="button" class="fake-button secondary inactive" data-role-only="SM" data-toast="Acción simulada">Cerrar reunión</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section card panel">
+        <div class="section-head"><div><h2>Historial de asistencia</h2><p class="section-sub">Datos de ejemplo · Sprint 02</p></div><span class="visual-only">Maqueta</span></div>
+        <div class="table-scroll"><table class="simple-table"><thead><tr><th>Reunión</th><th>Fecha</th><th>Miembro</th><th>Asistencia</th></tr></thead>
+          <tbody><tr><td>Daily Scrum</td><td>21/10/2026 · 09:00</td><td>Ana Ruiz</td><td><span class="chip green">Conectado</span></td></tr>
+          <tr><td>Daily Scrum</td><td>21/10/2026 · 09:00</td><td>Luis Vega</td><td><span class="chip amber">Tarde</span></td></tr>
+          <tr><td>Daily Scrum</td><td>21/10/2026 · 09:00</td><td>Marta Solís</td><td><span class="chip pink">Ausente</span></td></tr></tbody>
+        </table></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><div><h2>Otras juntas</h2><p class="section-sub">Ceremonias SCRUM · ejemplos</p></div></div>
+        <div class="grid cols-2">
+          <article class="card panel"><span class="chip blue">Sprint Planning</span><h3 class="meeting-title">Planificación Sprint 03</h3><p class="section-sub">Próxima semana · 10:00 · 90 minutos</p></article>
+          <article class="card panel"><span class="chip green">Sprint Review</span><h3 class="meeting-title">Revisión Sprint 02</h3><p class="section-sub">Viernes · 14:00 · 60 minutos</p></article>
+          <article class="card panel"><span class="chip amber">Retrospective</span><h3 class="meeting-title">Retrospectiva Sprint 02</h3><p class="section-sub">Viernes · 15:15 · 45 minutos</p></article>
+        </div>
+      </section>
+      <footer class="footer"><span>SprintBase · Prototipo académico no funcional · TI-162</span><span>CUC · Cuatrimestre 3-2026</span></footer>
+    </main>
+  </div>
+</body>
+</html>
