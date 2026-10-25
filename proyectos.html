@@ -1,1 +1,174 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Prototipo no funcional de gestión SCRUM"><title>Proyectos | SprintBase</title><link rel="stylesheet" href="css/estilos.css"></head><body><a class="skip" href="#contenido">Saltar al contenido</a><div class="shell"><aside class="sidebar" aria-label="Navegación principal"><a class="brand" href="index.html"><span class="brand-mark">S</span><span><span class="brand-name">SprintBase</span><small>Proyecto TI-162</small></span></a><p class="side-label">Espacio de trabajo</p><nav class="nav" aria-label="Módulos"><a href="index.html"><span class="nav-icon">◫</span> Resumen</a><a href="proyectos.html" class="active" aria-current="page"><span class="nav-icon">▣</span> Proyectos</a><a href="backlog.html"><span class="nav-icon">☷</span> Product Backlog</a><a href="sprints.html"><span class="nav-icon">◷</span> Sprints</a><a href="tareas.html"><span class="nav-icon">☑</span> Sprint Backlog / Tareas</a><a href="kanban.html"><span class="nav-icon">▦</span> Tablero Kanban</a><a href="seguimiento.html"><span class="nav-icon">↗</span> Seguimiento</a><a href="impedimentos.html"><span class="nav-icon">⚑</span> Impedimentos</a><a href="retrospectiva.html"><span class="nav-icon">✦</span> Retrospectiva</a></nav><p class="side-label">Administración</p><nav class="nav" aria-label="Administración"><a href="administracion.html"><span class="nav-icon">♙</span> Usuarios y roles</a><a href="login.html"><span class="nav-icon">⇥</span> Inicio de sesión</a></nav><p class="sidebar-bottom"><span class="mini-dot"></span>Versión 0.2 · Prototipo estático<br>Sin inicio de sesión real ni base de datos.</p></aside><main class="main" id="contenido"><div class="topbar"><p class="breadcrumb">Espacio de trabajo / <strong>Proyectos</strong></p><div class="top-actions"><span class="pill pill-preview">● Vista de muestra</span><span class="avatar">PO</span></div></div><div class="heading-row"><div><p class="eyebrow">HU-03 · Gestión de proyectos</p><h1>Proyectos</h1><p class="lead">Consultar proyectos, gestionar sus datos y asignar a sus integrantes.</p></div><span class="fake-button inactive">+ Nuevo proyecto · Próximamente</span></div><div class="info-box"><strong>Maqueta no funcional.</strong> Los datos son ilustrativos y las acciones se implementarán en las siguientes entregas. Esta pantalla no guarda ni modifica información.</div><section class="grid cols-2"><article class="card panel"><h2>Mis proyectos</h2><p class="section-sub">HU-03 · Vista del integrante</p><div class="item-row"><span class="item-icon">▣</span><div class="item-main"><h4>Plataforma de reservas</h4><p>Sprint 02 · 4 integrantes · En progreso</p></div><span class="chip blue">Activo</span></div><div class="item-row"><span class="item-icon">▣</span><div class="item-main"><h4>Sistema de inventario</h4><p>Product Backlog en revisión</p></div><span class="chip blue">Planificación</span></div><div class="item-row"><span class="item-icon">▣</span><div class="item-main"><h4>Gestión de soporte</h4><p>Sprint cerrado · retrospectiva pendiente</p></div><span class="chip blue">Revisión</span></div></article><article class="card panel"><h2>Nuevo proyecto / Edición</h2><p class="section-sub">HU-03 · Vista Product Owner · Campos proyectados</p><div class="mock-form"><label class="mock-label">Nombre<span class="mock-field">Plataforma de reservas</span></label><label class="mock-label">Descripción<span class="mock-field">Sistema para reservas digitales</span></label><label class="mock-label">Fecha de inicio<span class="mock-field">01/10/2026</span></label><label class="mock-label">Fecha de cierre<span class="mock-field">30/11/2026</span></label><label class="mock-label">Estado<span class="mock-field">En progreso</span></label><label class="mock-label">Product Owner<span class="mock-field">Responsable de producto</span></label><label class="mock-label">Scrum Master<span class="mock-field">Facilitador del equipo</span></label></div><span class="fake-button inactive">Guardar proyecto · Próximamente</span></article></section><section class="section card panel"><h2>Integrantes del proyecto</h2><p class="section-sub">Administración de miembros y responsabilidades</p><div class="table-scroll"><table class="simple-table"><thead><tr><th>Integrante</th><th>Rol del caso</th><th>Participación</th></tr></thead><tbody><tr><td>Responsable de producto</td><td>Product Owner</td><td>Priorización</td></tr><tr><td>Facilitador</td><td>Scrum Master</td><td>Seguimiento</td></tr><tr><td>Desarrollador A</td><td>Equipo</td><td>Desarrollo</td></tr><tr><td>Desarrollador B</td><td>Equipo</td><td>Pruebas</td></tr></tbody></table></div></section><footer class="footer"><span>SprintBase · Prototipo académico no funcional · TI-162</span><span>CUC · Cuatrimestre 3-2026</span></footer></main></div></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prototipo no funcional de gestión SCRUM" />
+  <title>Proyectos | SprintBase</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span><span class="brand-name">SprintBase</span><small>Proyecto TI-162</small></span></a>
+      <p class="side-label">Espacio de trabajo</p>
+      <nav class="nav" aria-label="Módulos">
+        <a href="index.html"><span class="nav-icon">◫</span> Resumen</a>
+        <a href="proyectos.html" class="active" aria-current="page"><span class="nav-icon">▣</span> Proyectos</a>
+        <a href="backlog.html"><span class="nav-icon">☷</span> Product Backlog</a>
+        <a href="sprints.html"><span class="nav-icon">◷</span> Sprints</a>
+        <a href="tareas.html"><span class="nav-icon">☑</span> Sprint Backlog / Tareas</a>
+        <a href="kanban.html"><span class="nav-icon">▦</span> Tablero Kanban</a>
+        <a href="seguimiento.html"><span class="nav-icon">↗</span> Seguimiento</a>
+        <a href="impedimentos.html"><span class="nav-icon">⚑</span> Impedimentos</a>
+        <a href="juntas.html"><span class="nav-icon">◎</span> Juntas</a>
+        <a href="retrospectiva.html"><span class="nav-icon">✦</span> Retrospectiva</a>
+      </nav>
+      <p class="side-label">Administración</p>
+      <nav class="nav" aria-label="Administración">
+        <a href="administracion.html"><span class="nav-icon">♙</span> Usuarios y roles</a>
+        <a href="login.html"><span class="nav-icon">⇥</span> Inicio de sesión</a>
+      </nav>
+      <p class="sidebar-bottom"><span class="mini-dot"></span>Versión 0.2 · Prototipo estático<br />Sin inicio de sesión real ni base de datos.</p>
+    </aside>
+
+    <main class="main" id="contenido">
+      <div class="topbar">
+        <p class="breadcrumb">Espacio de trabajo / <strong>Proyectos</strong></p>
+        <div class="top-actions">
+          <div class="role-switch" role="group" aria-label="Ver como">
+            <span>Ver como:</span>
+            <input type="radio" id="rol-neutral" name="rol" checked />
+            <label for="rol-neutral">Neutral</label>
+            <input type="radio" id="rol-po" name="rol" />
+            <label for="rol-po">PO</label>
+            <input type="radio" id="rol-sm" name="rol" />
+            <label for="rol-sm">SM</label>
+            <input type="radio" id="rol-eq" name="rol" />
+            <label for="rol-eq">EQ</label>
+            <input type="radio" id="rol-sk" name="rol" />
+            <label for="rol-sk">SK</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="heading-row">
+        <div>
+          <p class="eyebrow">HU-03 · Gestión de proyectos</p>
+          <h1>Proyectos</h1>
+          <p class="lead">Consultar proyectos, gestionar sus datos y asignar a sus integrantes.</p>
+        </div>
+        <div class="hero-actions">
+          <button class="fake-button inactive" type="button" disabled>+ Nuevo proyecto · Próximamente</button>
+          <details class="aviso-inline">
+            <summary>¿Qué pasará aquí?</summary>
+            <p class="modal-body">En el sistema final esta acción permitirá crear un proyecto con fechas, descripción y participantes. Esta maqueta no guarda cambios.</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="info-box"><strong>Maqueta no funcional.</strong> Los datos son ilustrativos y las acciones se implementarán en las siguientes entregas. Esta pantalla no guarda ni modifica información.</div>
+
+      <fieldset class="view-switch">
+        <legend>Ver proyectos</legend>
+        <input type="radio" id="projects-general" name="project-view" checked />
+        <label for="projects-general">Vista general</label>
+        <input type="radio" id="projects-reservas" name="project-view" />
+        <label for="projects-reservas">Plataforma de reservas</label>
+        <input type="radio" id="projects-inventario" name="project-view" />
+        <label for="projects-inventario">Sistema de inventario</label>
+        <input type="radio" id="projects-soporte" name="project-view" />
+        <label for="projects-soporte">Gestión de soporte</label>
+      </fieldset>
+
+      <section class="project-view projects-general grid cols-2">
+        <article class="card panel">
+          <h2>Mis proyectos</h2>
+          <p class="section-sub">HU-03 · Vista general</p>
+          <div class="item-row"><span class="item-icon">▣</span><div class="item-main"><h4>Plataforma de reservas</h4><p>Sprint 02 · 4 integrantes · En progreso</p></div><span class="chip blue">Activo</span></div>
+          <div class="item-row"><span class="item-icon">▣</span><div class="item-main"><h4>Sistema de inventario</h4><p>Product Backlog en revisión</p></div><span class="chip blue">Planificación</span></div>
+          <div class="item-row"><span class="item-icon">▣</span><div class="item-main"><h4>Gestión de soporte</h4><p>Sprint cerrado · retrospectiva pendiente</p></div><span class="chip blue">Revisión</span></div>
+        </article>
+        <article class="card panel">
+          <h2>Nuevo proyecto / Edición</h2>
+          <p class="section-sub">HU-03 · Campos proyectados</p>
+          <div class="mock-form">
+            <label class="mock-label">Nombre<span class="mock-field">Plataforma de reservas</span></label>
+            <label class="mock-label">Descripción<span class="mock-field">Sistema para reservas digitales</span></label>
+            <label class="mock-label">Fecha de inicio<span class="mock-field">01/10/2026</span></label>
+            <label class="mock-label">Fecha de cierre<span class="mock-field">30/11/2026</span></label>
+            <label class="mock-label">Estado<span class="mock-field">En progreso</span></label>
+            <label class="mock-label">Product Owner<span class="mock-field">Luis Vega</span></label>
+            <label class="mock-label">Scrum Master<span class="mock-field">Ana Ruiz</span></label>
+          </div>
+          <button class="fake-button inactive" type="button" disabled>Guardar proyecto · Próximamente</button>
+        </article>
+      </section>
+
+      <section class="project-view projects-general section card panel">
+        <h2>Integrantes del proyecto</h2>
+        <p class="section-sub">Administración de miembros y responsabilidades · vista general</p>
+        <div class="table-scroll">
+          <table class="simple-table">
+            <thead><tr><th>Integrante</th><th>Rol</th><th>Participación</th></tr></thead>
+            <tbody>
+              <tr><td>Luis Vega</td><td>Product Owner</td><td>Priorización</td></tr>
+              <tr><td>Ana Ruiz</td><td>Scrum Master</td><td>Seguimiento</td></tr>
+              <tr><td>Marta Solís</td><td>Equipo</td><td>Desarrollo</td></tr>
+              <tr><td>Elena Mora</td><td>Stakeholder</td><td>Revisión</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="project-view projects-reservas card panel">
+        <div class="section-head">
+          <div><h2>Plataforma de reservas</h2><p class="section-sub">Proyecto activo · Sprint 02 · 4 integrantes</p></div>
+          <span class="chip green">En progreso</span>
+        </div>
+        <div class="detail-list">
+          <div class="detail-line"><span>Descripción</span><strong>Sistema para reservas digitales</strong></div>
+          <div class="detail-line"><span>Periodo</span><strong>01/10/2026 – 30/11/2026</strong></div>
+          <div class="detail-line"><span>Product Owner</span><strong>Luis Vega</strong></div>
+          <div class="detail-line"><span>Scrum Master</span><strong>Ana Ruiz</strong></div>
+        </div>
+        <h3 style="margin-top:20px;">Equipo del proyecto</h3>
+        <div class="item-row"><span class="item-icon">PO</span><div class="item-main"><h4>Luis Vega</h4><p>Product Owner · Priorización</p></div></div>
+        <div class="item-row"><span class="item-icon">SM</span><div class="item-main"><h4>Ana Ruiz</h4><p>Scrum Master · Seguimiento</p></div></div>
+        <div class="item-row"><span class="item-icon">EQ</span><div class="item-main"><h4>Marta Solís</h4><p>Equipo · Desarrollo</p></div></div>
+        <div class="item-row"><span class="item-icon">SK</span><div class="item-main"><h4>Elena Mora</h4><p>Stakeholder · Revisión</p></div></div>
+        <p class="section-sub"><a class="text-link" href="sprints.html">Ver los sprints del proyecto →</a></p>
+      </section>
+
+      <section class="project-view projects-inventario card panel">
+        <div class="section-head">
+          <div><h2>Sistema de inventario</h2><p class="section-sub">Product Backlog en revisión</p></div>
+          <span class="chip blue">Planificación</span>
+        </div>
+        <div class="detail-list">
+          <div class="detail-line"><span>Descripción</span><strong>Control de existencias y movimientos</strong></div>
+          <div class="detail-line"><span>Periodo</span><strong>Por definir</strong></div>
+          <div class="detail-line"><span>Historias priorizadas</span><strong>4 (ejemplo)</strong></div>
+          <div class="detail-line"><span>Responsable de producto</span><strong>Luis Vega</strong></div>
+        </div>
+      </section>
+
+      <section class="project-view projects-soporte card panel">
+        <div class="section-head">
+          <div><h2>Gestión de soporte</h2><p class="section-sub">Sprint cerrado · retrospectiva pendiente</p></div>
+          <span class="chip amber">Revisión</span>
+        </div>
+        <div class="detail-list">
+          <div class="detail-line"><span>Descripción</span><strong>Registro y seguimiento de solicitudes de soporte</strong></div>
+          <div class="detail-line"><span>Estado</span><strong>Retrospectiva pendiente</strong></div>
+          <div class="detail-line"><span>Sprint asociado</span><strong>Sprint 01 · Cerrado</strong></div>
+          <div class="detail-line"><span>Acción siguiente</span><strong>Revisar resultados del equipo</strong></div>
+        </div>
+      </section>
+
+      <footer class="footer"><span>SprintBase · Prototipo académico no funcional · TI-162</span><span>CUC · Cuatrimestre 3-2026</span></footer>
+    </main>
+  </div>
+</body>
+</html>
